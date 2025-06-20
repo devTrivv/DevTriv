@@ -1,11 +1,12 @@
 --[[
-🌸 Especial de Aniversário - 222 Frases Poéticas e Carinhosas 🌸
-✨ Sem menções a beijos ou abraços, apenas carinho, saudade e admiração à distância ✨
-✨ Enfeites caindo feitos apenas com Frames! ✨
-✨ Frases em estilo destacado, detalhado e bonito! ✨
+🌟 SUPER ESPECIAL DE ANIVERSÁRIO - VERSÃO FESTIVA 🌟
+✨ Frases originais + inéditas (carinho, poesia, aniversário)!
+✨ Visual: confetes, banner animado, brilhos, frames estilizados!
+✨ Pode ser usado direto como LocalScript no Roblox Studio!
 ]]
 
 local frases = {
+    -- Suas frases originais
     "Hoje o mundo sorriu só porque é o seu dia.",
     "Você é o raio de sol que insiste em entrar mesmo pela fresta mais pequena da minha janela emocional.",
     "Você é a aurora que colore meus pensamentos antes mesmo do sol nascer.",
@@ -192,177 +193,142 @@ local frases = {
     "Meu coração sorri só de imaginar seu sorriso.",
     "Meu coração deseja tua felicidade com uma força que não cabe em palavras.",
     "Você é o melhor presente que a vida me deu, mesmo de longe.",
-    -- 142 frases acima, adicione suas próprias ou repita/varie para completar até 222:
-    -- Exemplos para completar até 222:
-    "Você é a luz que ilumina o que ninguém percebe.",
-    "Você é o detalhe bonito que faz tudo valer a pena.",
-    "Você é a borboleta que pousou no meu jardim secreto.",
-    "Você é o sorriso na foto antiga do meu coração.",
-    "Você é a lembrança que sempre traz cor ao meu dia.",
-    "Você é a promessa de sol após todo temporal.",
-    "Você é a música que toca no rádio do meu peito.",
-    "Você é o perfume doce que fica no ar da minha memória.",
-    "Você é a poesia que o tempo não apaga.",
-    "Você é o sonho que eu conto só para as estrelas.",
-    "Você é o abraço que sinto mesmo de longe.",
-    "Você é o brilho do luar refletido no meu olhar.",
-    "Você é a calmaria que acalma toda tempestade.",
-    "Você é a resposta para as perguntas que nem sei fazer.",
-    "Você é a esperança que floresce em mim todos os dias.",
-    "Você é o desejo bom que guardo em silêncio.",
-    "Você é a certeza de que tudo pode ser mais bonito.",
-    "Você é o sorriso que me visita sem avisar.",
-    "Você é a razão do meu coração bater mais forte.",
-    "Você é o motivo de eu querer ser alguém melhor.",
-    "Você é a saudade que alegra e dói ao mesmo tempo.",
-    "Você é a paz que mora no meu peito.",
-    "Você é o refrão da canção da minha vida.",
-    "Você é o sol da minha manhã e a lua da minha noite.",
-    "Você é a estrela que guia meus sonhos.",
-    "Você é o abraço que me cobre de carinho.",
-    "Você é o vento que espalha sementes de alegria em mim.",
-    "Você é o presente mais bonito que a vida me deu.",
-    "Você é a história que quero contar para sempre.",
-    "Você é a luz que nunca se apaga.",
-    "Você é o desejo de felicidade que guardo para o futuro.",
-    "Você é a inspiração dos meus versos mais sinceros.",
-    "Você é a lembrança boa que nunca envelhece.",
-    "Você é o sorriso que ilumina qualquer escuridão.",
-    "Você é a paz depois da tormenta.",
-    "Você é a esperança que não me deixa desistir.",
-    "Você é o começo e o fim do meu pensamento feliz.",
-    "Você é a vontade de viver o amanhã.",
-    "Você é a ternura que embala meus sonhos.",
-    "Você é o segredo guardado a sete chaves no meu peito.",
-    "Você é o perfume da flor mais rara.",
-    "Você é o céu estrelado nas noites sem luar.",
-    "Você é o calor do sol que aquece minha alma.",
-    "Você é a cor que pinta meu mundo.",
-    "Você é o tempo bom que nunca passa.",
-    "Você é o riso leve que me faz flutuar.",
-    "Você é a poesia que mora no meu olhar.",
-    "Você é a razão do meu melhor sorriso.",
-    "Você é minha inspiração constante.",
-    "Você é o amanhã cheio de promessas bonitas.",
-    "Você é a alegria inesperada no meu dia.",
-    "Você é o brilho discreto no meio da multidão.",
-    "Você é a paz que quero para a vida inteira.",
-    "Você é a certeza de que tudo vai dar certo.",
-    "Você é o abraço apertado que o tempo não apaga.",
-    "Você é o sonho bonito que nunca termina.",
-    "Você é o raio de luz que atravessa qualquer escuridão.",
-    "Você é a esperança de dias felizes.",
-    "Você é o sorriso que colore minha rotina.",
-    "Você é a lembrança boa que sempre me visita.",
-    "Você é o riso que ecoa dentro de mim.",
-    "Você é a canção que nunca sai da minha cabeça.",
-    "Você é o carinho que faz morada no meu peito.",
-    "Você é a saudade boa que me faz sorrir.",
-    "Você é a doçura que tempera meus dias.",
-    "Você é o sonho que não quero acordar.",
-    "Você é a promessa de tempos melhores.",
-    "Você é o motivo da minha gratidão.",
-    "Você é o abraço que me protege do mundo.",
-    "Você é o sol que nasce quando tudo parece escuro.",
-    "Você é a poesia escrita em cada batida do meu coração.",
-    "Você é a esperança que renasce toda manhã.",
-    "Você é o encanto que transforma o simples em extraordinário.",
-    "Você é a alegria que invade meu peito sem pedir licença.",
-    "Você é o melhor pedaço do meu dia.",
-    "Você é a melodia suave que embala minha mente.",
-    "Você é o verso bonito que faltava no meu poema.",
-    "Você é o sorriso que enfeita minha saudade.",
-    "Você é a resposta para todas as minhas perguntas.",
-    "Você é o caminho que quero trilhar.",
-    "Você é o sonho que desejo viver.",
-    "Você é o carinho que me faz acreditar no amor.",
-    "Você é a estrela que ilumina minha noite.",
-    "Você é a cor que faltava no meu arco-íris.",
-    "Você é a lembrança que sempre traz paz.",
-    "Você é a ternura que acalma minha alma.",
-    "Você é o suspiro leve no meio da correria.",
-    "Você é a certeza de que o amor existe.",
-    "Você é a saudade que me faz bem.",
-    "Você é a poesia que nunca acaba.",
-    "Você é a felicidade que transborda em mim.",
-    "Você é o abraço apertado que conforta meu coração.",
-    "Você é a esperança que nunca morre.",
-    "Você é o sorriso que ilumina minha estrada.",
-    "Você é o sonho que embala minha vida.",
-    "Você é a vontade de ser melhor.",
-    "Você é a razão do brilho nos meus olhos.",
-    "Você é a resposta das minhas preces.",
-    "Você é o sol que dissipa qualquer nuvem.",
-    "Você é a paz que encontro no fim do dia.",
-    "Você é o presente de Deus para minha vida.",
-    "Você é a alegria que não tem fim.",
-    "Você é o carinho que me faz sorrir sem motivo.",
-    "Você é o caminho certo no meio de tantas escolhas.",
-    "Você é o amor que ultrapassa qualquer distância.",
-    "Você é a saudade que me faz querer te ver de novo.",
-    "Você é o sorriso que me faz acreditar no amanhã.",
-    "Você é a certeza de que tudo vale a pena.",
-    "Você é a poesia viva no meu cotidiano.",
-    "Você é a música que embala meu coração.",
-    "Você é a esperança que se renova todos os dias.",
-    "Você é a luz do meu farol.",
-    "Você é a alegria que transborda dos meus olhos.",
-    "Você é a paz que mora no meu sorriso.",
-    "Você é o sonho que quero realizar.",
-    "Você é a razão de todo o meu carinho.",
-    "Você é o abraço que me faz sentir em casa.",
-    "Você é o sorriso que faz tudo valer a pena.",
-    "Você é a saudade boa que me faz companhia.",
-    "Você é a resposta do universo ao meu pedido de amor.",
-    "Você é o raio de sol que aquece meu coração.",
-    "Você é a poesia feita pessoa.",
-    "Você é o amor que preenche minha vida.",
-    "Você é a esperança em forma de gente.",
-    "Você é o presente que pedi em silêncio.",
-    "Você é o sonho realizado do meu coração.",
-    "Você é a paz que eu quero pra sempre.",
-    "Você é o brilho especial que ilumina meu mundo.",
-    "Você é o sorriso que colore meus dias.",
-    "Você é o motivo da minha felicidade.",
-    "Você é o amor que não cabe em palavras.",
-    "Você é o verso mais bonito da minha história.",
-    "Você é a canção que embala minha alma.",
-    "Você é a certeza de que tudo tem sentido.",
-    "Você é a estrela que nunca se apaga.",
-    "Você é o abraço apertado que me faz falta.",
-    "Você é o carinho que nunca esqueço.",
-    "Você é a esperança que nunca desiste.",
-    "Você é o motivo do meu sorriso largo.",
-    "Você é o sonho que não quero acordar.",
-    "Você é o amor que só cresce.",
-    "Você é o melhor de mim."
+    -- Frases inéditas organizadas:
+    "Hoje é o seu dia de ser estrela, de brilhar mais que o sol.",
+    "Que cada balão represente um sonho realizado neste ano novo de vida.",
+    "Seu sorriso é o presente que desejo ver todos os dias.",
+    "Que a alegria do seu aniversário dure todos os meses do ano.",
+    "Você faz do mundo um lugar mais bonito só por existir.",
+    "Que cada confete caia trazendo sorte e esperança para você.",
+    "Seu aniversário é a celebração da beleza de ser quem você é.",
+    "Te desejo caminhos floridos e cores vivas em cada manhã.",
+    "Que seus dias sejam sempre cheios de sorrisos sinceros.",
+    "Você é a luz que inspira todos ao redor.",
+    "Que toda felicidade te encontre e faça morada.",
+    "Que o universo conspire para o seu melhor sempre.",
+    "Que cada vela soprada hoje leve embora qualquer tristeza.",
+    "Seu aniversário é um lembrete: o mundo é melhor com você.",
+    "Que a cada parabéns você receba uma dose extra de carinho.",
+    "Que seus sonhos sejam grandes e seus passos leves.",
+    "Que não falte bolo, risadas e amor em sua vida.",
+    "Você é o motivo do sorriso de muita gente.",
+    "Que a vida te abrace com esperança e ternura.",
+    "Que cada presente seja repleto de bons sentimentos.",
+    "Hoje, o universo inteiro festeja sua existência.",
+    "Que sua caminhada seja iluminada por conquistas e afeto.",
+    "Que seus desejos mais doces se multipliquem como confetes ao vento.",
+    "Você é inspiração para quem sonha e para quem ama.",
+    "Que o tempo te traga só experiências lindas.",
+    "Que a saúde, a alegria e o amor sejam eternos convidados em sua festa.",
+    "Hoje é dia de agradecer por você ser tão especial.",
+    "Que seu aniversário seja um jardim de realizações.",
+    "Você merece todas as cores e brilhos do mundo.",
+    "Que os próximos 365 dias sejam de pura felicidade.",
+    "Que cada abraço hoje seja lembrado o ano todo.",
+    "Que a leveza do seu sorriso ilumine todos os ambientes.",
+    "Que sua vida seja sempre uma celebração.",
+    "Que cada mensagem recebida hoje seja um carinho guardado.",
+    "Que a esperança nunca falte em seu coração.",
+    "Que a alegria deste dia seja sua companhia diária.",
+    "Você é o parabéns mais bonito do meu calendário.",
+    "Que suas lembranças sejam sempre doces e perfumadas.",
+    "Que o vento leve até você todos os meus votos de felicidade.",
+    "Que seus sonhos sejam sempre maiores do que qualquer medo.",
+    "Que os dias tristes passem rápido e os felizes durem muito.",
+    "Que você seja sempre celebrado pela pessoa incrível que é.",
+    "Que o sol brilhe mais forte no seu aniversário.",
+    "Que cada desejo feito hoje floresça no tempo certo.",
+    "Que a vida seja generosa com você em cada detalhe.",
+    "Que nunca falte esperança e motivos para agradecer.",
+    "Que você colecione momentos felizes e abraços sinceros.",
+    "Que a paz seja sua melhor companhia.",
+    "Que cada conquista sua seja celebrada como um grande feito.",
+    "Que a ternura faça morada no seu peito.",
+    "Que sua história seja contada com orgulho e alegria.",
+    "Que seu novo ciclo venha repleto de bênçãos e aprendizados.",
+    "Que a felicidade dance ao seu redor todos os dias.",
+    "Que cada sorriso seu seja motivo de festa.",
+    "Que a gratidão seja constante em seu caminho.",
+    "Que o amor encontre você em cada esquina da vida.",
+    "Que a esperança seja sempre o seu farol.",
+    "Que cada novo ano traga ainda mais motivos para sorrir.",
+    "Hoje o mundo é mais bonito porque é seu aniversário.",
+    "Que a cada parabéns, seu coração se encha de alegria.",
+    "Que a sorte te abrace forte neste novo ciclo.",
+    "Que seus melhores sonhos encontrem asas.",
+    "Que sua essência alegre inspire todos a sua volta.",
+    "Que a felicidade seja seu presente diário.",
+    "Que todo carinho recebido hoje se multiplique sempre.",
+    "Que a vida te surpreenda com motivos para sorrir.",
+    "Que o universo seja generoso com seus desejos.",
+    "Que o futuro te reserve conquistas e ternura.",
+    "Que cada ano novo seja mais incrível que o anterior.",
+    "Que nunca falte motivos para comemorar.",
+    "Que cada passo traga paz e felicidade.",
+    "Que a luz do seu olhar nunca se apague.",
+    "Que o amor seja sempre sua melhor companhia.",
+    "Que o brilho da sua alma ilumine todos ao redor.",
+    "Que todos os dias tenham sabor de festa.",
+    "Que cada manhã seja um convite à alegria.",
+    "Que a esperança floresça em cada novo ciclo.",
+    "Que o tempo seja seu aliado na busca da felicidade.",
+    "Que a vida sorria para você sempre.",
+    "Que o amor seja abundante em todos os dias.",
+    "Que sua história seja cheia de capítulos felizes.",
+    "Que o mundo reconheça a preciosidade que é a sua vida.",
+    "Que as melhores energias te acompanhem sempre.",
+    "Que as bênçãos se multipliquem em cada aniversário.",
+    "Que o seu sorriso nunca perca o brilho.",
+    "Que a felicidade faça morada em seu coração.",
+    "Que sua jornada seja repleta de luz e esperança.",
+    "Que a ternura esteja presente em cada instante.",
+    "Que o seu caminho seja sempre florido.",
+    "Que a paz seja constante em seu novo ciclo.",
+    "Que a vida seja doce em cada detalhe.",
+    "Que o tempo só traga motivos para agradecer.",
+    "Que o futuro brilhe como nunca.",
+    "Que você se permita sonhar cada vez mais alto.",
+    "Que a alegria te encontre até nos dias mais simples.",
+    "Que a gratidão seja sua fiel companheira.",
+    "Que a vida te abrace em todos os momentos.",
+    "Que você celebre cada conquista como uma grande vitória.",
+    "Que a esperança se renove a cada novo aniversário.",
+    "Que a felicidade seja sua rotina.",
+    "Que a vida retribua em dobro todo o bem que você espalha.",
+    "Que cada novo ciclo seja melhor que o anterior.",
+    "Que você tenha sempre motivos para sorrir sem motivo.",
+    "Que a paz, o amor e a saúde nunca faltem.",
+    "Que cada aniversário seja inesquecível.",
+    "Que você continue sendo inspiração e alegria.",
+    "Que o mundo seja generoso com a sua caminhada.",
+    "Que a vida seja sempre cheia de festas e bons encontros.",
+    "Fim das frases! Agora sim acabou kkkk"
 }
 
-local creditos = "que o dia seja tão lindo quanto vc mvd, Não estou ai para estar perto de vc nessa data tao importante mas eu estou dentro do seu coraçãozinho, de pablo para o amor da sua vida jhi❤️👑"
+local creditos = "Que o dia seja tão lindo quanto você! Não estou aí para estar perto de você nessa data tão importante, mas estou dentro do seu coraçãozinho. De Pablo para o amor da sua vida, Jhi ❤️👑"
 
+-- VISUAL FESTIVO ROBLOX
 local Players = game:GetService("Players")
 local player = Players.LocalPlayer
 local TweenService = game:GetService("TweenService")
+local RunService = game:GetService("RunService")
 local ScreenGui = Instance.new("ScreenGui")
 ScreenGui.IgnoreGuiInset = true
 ScreenGui.ResetOnSpawn = false
 ScreenGui.Parent = player:WaitForChild("PlayerGui")
 
--- Fundo sólido
+-- Fundo gradiente
 local AbsoluteBackground = Instance.new("Frame")
 AbsoluteBackground.Size = UDim2.new(1, 0, 1, 0)
 AbsoluteBackground.Position = UDim2.new(0, 0, 0, 0)
-AbsoluteBackground.AnchorPoint = Vector2.new(0, 0)
-AbsoluteBackground.BackgroundColor3 = Color3.fromRGB(255, 240, 245)
+AbsoluteBackground.BackgroundColor3 = Color3.fromRGB(255, 235, 245)
 AbsoluteBackground.BorderSizePixel = 0
 AbsoluteBackground.ZIndex = 0
 AbsoluteBackground.Parent = ScreenGui
 
--- Gradiente
 local Background = Instance.new("Frame")
 Background.Size = UDim2.new(1, 0, 1, 0)
 Background.Position = UDim2.new(0, 0, 0, 0)
-Background.AnchorPoint = Vector2.new(0, 0)
 Background.BackgroundTransparency = 1
 Background.BorderSizePixel = 0
 Background.ZIndex = 1
@@ -377,165 +343,155 @@ Gradient.Color = ColorSequence.new{
 Gradient.Rotation = 45
 Gradient.Parent = Background
 
--- Enfeites caindo (sem imagens, só Frames)
-local function createFallingShape(shapeType, color, rate, sizeMin, sizeMax, zindex)
-    local parentGui = Instance.new("Frame")
-    parentGui.Size = UDim2.new(1, 0, 1, 0)
-    parentGui.BackgroundTransparency = 1
-    parentGui.ZIndex = zindex or 3
-    parentGui.Parent = ScreenGui
+-- Banner animado no topo
+local Banner = Instance.new("Frame")
+Banner.Size = UDim2.new(0.95, 0, 0.13, 0)
+Banner.Position = UDim2.new(0.025, 0, 0.02, 0)
+Banner.BackgroundColor3 = Color3.fromRGB(255, 205, 98)
+Banner.BackgroundTransparency = 0.08
+Banner.ZIndex = 10
+Banner.Parent = ScreenGui
+local BannerCorner = Instance.new("UICorner")
+BannerCorner.CornerRadius = UDim.new(0,22)
+BannerCorner.Parent = Banner
+local BannerStroke = Instance.new("UIStroke")
+BannerStroke.Color = Color3.fromRGB(255, 135, 0)
+BannerStroke.Thickness = 3
+BannerStroke.Transparency = 0.25
+BannerStroke.Parent = Banner
 
+local BannerLabel = Instance.new("TextLabel")
+BannerLabel.Size = UDim2.new(1, -40, 1, -10)
+BannerLabel.Position = UDim2.new(0,20,0,5)
+BannerLabel.BackgroundTransparency = 1
+BannerLabel.Text = "🎉 Feliz aniversárioooo minha mulher maravilhosaaa❤️ 🎉"
+BannerLabel.TextColor3 = Color3.fromRGB(255, 80, 110)
+BannerLabel.Font = Enum.Font.FredokaOne
+BannerLabel.TextStrokeTransparency = 0.5
+BannerLabel.TextStrokeColor3 = Color3.fromRGB(255, 240, 245)
+BannerLabel.TextScaled = true
+BannerLabel.TextWrapped = true
+BannerLabel.ZIndex = 11
+BannerLabel.Parent = Banner
+
+local BannerGradient = Instance.new("UIGradient")
+BannerGradient.Color = ColorSequence.new{
+    ColorSequenceKeypoint.new(0, Color3.fromRGB(255, 230, 120)),
+    ColorSequenceKeypoint.new(1, Color3.fromRGB(255, 80, 110))
+}
+BannerGradient.Parent = BannerLabel
+
+spawn(function()
+    local t = 0
+    while Banner and Banner.Parent do
+        t = t + RunService.Heartbeat:Wait()
+        Banner.Position = UDim2.new(0.025,math.sin(t*1.5)*7,0.02,math.sin(t*2)*6)
+    end
+end)
+
+-- Confetes festivos caindo
+local function createConfetti(rate)
+    local confettiColors = {
+        Color3.fromRGB(255, 80, 110),
+        Color3.fromRGB(255, 220, 90),
+        Color3.fromRGB(170, 120, 255),
+        Color3.fromRGB(120, 255, 180),
+        Color3.fromRGB(255, 140, 90),
+        Color3.fromRGB(120, 190, 255),
+        Color3.fromRGB(255, 205, 98)
+    }
     coroutine.wrap(function()
         while true do
-            local shape = Instance.new("Frame")
-            shape.Size = UDim2.new(0, math.random(sizeMin, sizeMax), 0, math.random(sizeMin, sizeMax))
-            shape.Position = UDim2.new(math.random(), 0, 0, -math.random(20, 80))
-            shape.BackgroundTransparency = 0
-            shape.BackgroundColor3 = color
-            shape.BorderSizePixel = 0
-            shape.ZIndex = zindex or 3
-            shape.Parent = parentGui
+            local confetti = Instance.new("Frame")
+            confetti.Size = UDim2.new(0, math.random(8,18), 0, math.random(8,18))
+            confetti.Position = UDim2.new(math.random(), 0, 0, -math.random(20,100))
+            confetti.BackgroundTransparency = 0
+            confetti.BackgroundColor3 = confettiColors[math.random(1,#confettiColors)]
+            confetti.BorderSizePixel = 0
+            confetti.ZIndex = 6
+            confetti.Rotation = math.random(0,360)
+            confetti.Parent = ScreenGui
+            local corner = Instance.new("UICorner")
+            corner.CornerRadius = UDim.new(1,0)
+            corner.Parent = confetti
 
-            if shapeType == "circle" then
-                local corner = Instance.new("UICorner")
-                corner.CornerRadius = UDim.new(1, 0)
-                corner.Parent = shape
-            elseif shapeType == "star" then
-                local starLine1 = Instance.new("Frame")
-                starLine1.AnchorPoint = Vector2.new(0.5, 0.5)
-                starLine1.Size = UDim2.new(1, 0, 0.25, 0)
-                starLine1.Position = UDim2.new(0.5, 0, 0.5, 0)
-                starLine1.BackgroundColor3 = color
-                starLine1.BackgroundTransparency = 0
-                starLine1.BorderSizePixel = 0
-                starLine1.Rotation = 45
-                starLine1.Parent = shape
-
-                local starLine2 = Instance.new("Frame")
-                starLine2.AnchorPoint = Vector2.new(0.5, 0.5)
-                starLine2.Size = UDim2.new(1, 0, 0.25, 0)
-                starLine2.Position = UDim2.new(0.5, 0, 0.5, 0)
-                starLine2.BackgroundColor3 = color
-                starLine2.BackgroundTransparency = 0
-                starLine2.BorderSizePixel = 0
-                starLine2.Rotation = -45
-                starLine2.Parent = shape
-            elseif shapeType == "heart" then
-                local leftCircle = Instance.new("Frame")
-                leftCircle.Size = UDim2.new(0.6, 0, 0.6, 0)
-                leftCircle.Position = UDim2.new(0, 0, 0, 0)
-                leftCircle.BackgroundColor3 = color
-                leftCircle.BackgroundTransparency = 0
-                leftCircle.BorderSizePixel = 0
-                leftCircle.ZIndex = shape.ZIndex + 1
-                local corner = Instance.new("UICorner")
-                corner.CornerRadius = UDim.new(1,0)
-                corner.Parent = leftCircle
-                leftCircle.Parent = shape
-
-                local rightCircle = Instance.new("Frame")
-                rightCircle.Size = UDim2.new(0.6, 0, 0.6, 0)
-                rightCircle.Position = UDim2.new(0.4, 0, 0, 0)
-                rightCircle.BackgroundColor3 = color
-                rightCircle.BackgroundTransparency = 0
-                rightCircle.BorderSizePixel = 0
-                rightCircle.ZIndex = shape.ZIndex + 1
-                local corner2 = Instance.new("UICorner")
-                corner2.CornerRadius = UDim.new(1,0)
-                corner2.Parent = rightCircle
-                rightCircle.Parent = shape
-
-                local bottom = Instance.new("Frame")
-                bottom.Size = UDim2.new(1,0,0.6,0)
-                bottom.Position = UDim2.new(0,0,0.4,0)
-                bottom.BackgroundColor3 = color
-                bottom.BackgroundTransparency = 0
-                bottom.BorderSizePixel = 0
-                bottom.Rotation = 45
-                bottom.ZIndex = shape.ZIndex + 1
-                local corner3 = Instance.new("UICorner")
-                corner3.CornerRadius = UDim.new(0, shape.AbsoluteSize.X/2)
-                corner3.Parent = bottom
-                bottom.Parent = shape
-            end
-
-            local duration = math.random(3,6)
-            local finalX = math.clamp(shape.Position.X.Scale + math.random(-10,10)/100, 0, 1)
+            local duration = math.random(3,5)
+            local finalX = math.clamp(confetti.Position.X.Scale + math.random(-10,10)/100, 0, 1)
             local tween = TweenService:Create(
-                shape,
+                confetti,
                 TweenInfo.new(duration, Enum.EasingStyle.Linear),
-                {Position = UDim2.new(finalX, 0, 1, 0), Rotation = math.random(-90,90)}
+                {Position = UDim2.new(finalX, 0, 1, 0), Rotation = math.random(0,360)}
             )
             tween:Play()
             tween.Completed:Connect(function()
-                shape:Destroy()
+                confetti:Destroy()
             end)
             wait(1/rate)
         end
     end)()
 end
+createConfetti(24)
 
--- Corações caindo (rosa)
-createFallingShape("heart", Color3.fromRGB(255, 80, 110), 6, 18, 28, 2)
--- Estrelas caindo (amarelo claro)
-createFallingShape("star", Color3.fromRGB(255, 220, 90), 4, 16, 24, 2)
--- Confete caindo (roxo)
-createFallingShape("circle", Color3.fromRGB(170, 120, 255), 8, 10, 18, 2)
+-- Brilhos estelares animados
+local function createSparkle()
+    local sparkle = Instance.new("Frame")
+    sparkle.Size = UDim2.new(0,math.random(7,18),0,math.random(7,18))
+    sparkle.Position = UDim2.new(math.random(),0,math.random(),0)
+    sparkle.BackgroundTransparency = 1
+    sparkle.BorderSizePixel = 0
+    sparkle.ZIndex = 9
+    sparkle.Parent = ScreenGui
+    local img = Instance.new("ImageLabel")
+    img.Size = UDim2.new(1,0,1,0)
+    img.Position = UDim2.new(0,0,0,0)
+    img.BackgroundTransparency = 1
+    img.Image = "rbxassetid://1095708" -- estrela
+    img.ImageColor3 = Color3.fromRGB(255,255,220)
+    img.ImageTransparency = 0.4 + math.random()*0.2
+    img.ZIndex = 9
+    img.Parent = sparkle
+    local fade = TweenService:Create(img,TweenInfo.new(1.6),{ImageTransparency = 1})
+    fade:Play()
+    fade.Completed:Connect(function() sparkle:Destroy() end)
+end
+spawn(function()
+    while true do
+        createSparkle()
+        wait(0.18+math.random()*0.19)
+    end
+end)
 
--- Frame principal das frases e título
+-- Frame principal e frase animada (SEM O TÍTULO ACIMA DAS FRASES)
 local Frame = Instance.new("Frame")
 Frame.Size = UDim2.new(0.7, 0, 0.24, 0)
 Frame.Position = UDim2.new(0.15, 0, 0.35, 0)
-Frame.BackgroundColor3 = Color3.fromRGB(255, 182, 193)
-Frame.BackgroundTransparency = 0.08
+Frame.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Frame.BackgroundTransparency = 0.07
 Frame.BorderSizePixel = 0
-Frame.ZIndex = 4
+Frame.ZIndex = 14
 Frame.Parent = Background
 
 local UICorner = Instance.new("UICorner")
-UICorner.CornerRadius = UDim.new(0, 24)
+UICorner.CornerRadius = UDim.new(0, 28)
 UICorner.Parent = Frame
 
 local UIS = Instance.new("Frame")
 UIS.Size = UDim2.new(1, 0, 1, 0)
 UIS.Position = UDim2.new(0, 0, 0, 0)
 UIS.BackgroundColor3 = Color3.fromRGB(0,0,0)
-UIS.BackgroundTransparency = 0.95
+UIS.BackgroundTransparency = 0.96
 UIS.ZIndex = 0
 UIS.Parent = Frame
 
 local UIStroke = Instance.new("UIStroke")
-UIStroke.Color = Color3.fromRGB(255, 105, 180)
-UIStroke.Thickness = 4
-UIStroke.Transparency = 0.3
+UIStroke.Color = Color3.fromRGB(255, 205, 98)
+UIStroke.Thickness = 5
+UIStroke.Transparency = 0.33
 UIStroke.Parent = Frame
 
--- Título acima das frases
-local TitleLabel = Instance.new("TextLabel")
-TitleLabel.Size = UDim2.new(1, 0, 0.35, 0)
-TitleLabel.Position = UDim2.new(0, 0, -0.35, 0)
-TitleLabel.BackgroundTransparency = 1
-TitleLabel.Text = "FELIZ ANIVERSÁRIO MINHA MULHER MARAVILHOSA❤️"
-TitleLabel.TextColor3 = Color3.fromRGB(255, 80, 110)
-TitleLabel.Font = Enum.Font.FredokaOne
-TitleLabel.TextStrokeTransparency = 0.7
-TitleLabel.TextStrokeColor3 = Color3.fromRGB(255, 240, 245)
-TitleLabel.TextScaled = true
-TitleLabel.TextWrapped = true
-TitleLabel.ZIndex = 6
-TitleLabel.Parent = Frame
-
-local TitleGradient = Instance.new("UIGradient")
-TitleGradient.Color = ColorSequence.new{
-    ColorSequenceKeypoint.new(0, Color3.fromRGB(255, 182, 193)),
-    ColorSequenceKeypoint.new(1, Color3.fromRGB(255, 80, 110))
-}
-TitleGradient.Parent = TitleLabel
-
--- Texto da frase estilizada
 local TextLabel = Instance.new("TextLabel")
-TextLabel.Size = UDim2.new(1, -30, 0.65, -30)
-TextLabel.Position = UDim2.new(0, 15, 0.35, 15)
+TextLabel.Size = UDim2.new(1, -30, 0.9, -30)
+TextLabel.Position = UDim2.new(0, 15, 0.05, 15)
 TextLabel.BackgroundTransparency = 1
 TextLabel.TextColor3 = Color3.fromRGB(255, 80, 140)
 TextLabel.Font = Enum.Font.FredokaOne
@@ -543,7 +499,7 @@ TextLabel.TextStrokeTransparency = 0.6
 TextLabel.TextStrokeColor3 = Color3.fromRGB(255, 210, 230)
 TextLabel.TextScaled = true
 TextLabel.TextWrapped = true
-TextLabel.ZIndex = 5
+TextLabel.ZIndex = 15
 TextLabel.Parent = Frame
 
 local TextGradient = Instance.new("UIGradient")
@@ -574,7 +530,6 @@ CreditStroke.Thickness = 5
 CreditStroke.Transparency = 0.10
 CreditStroke.Parent = CreditFrame
 
--- Detalhes decorativos nos cantos do créditos
 for _, pos in pairs{
     UDim2.new(0, -25, 0, -25),
     UDim2.new(1, 5, 0, -25),
@@ -644,7 +599,6 @@ bc.CornerRadius = UDim.new(0, 24)
 bc.Parent = bottom
 bottom.Parent = heart
 
--- Créditos texto
 local CreditLabel = Instance.new("TextLabel")
 CreditLabel.Size = UDim2.new(0.92, 0, 0.87, 0)
 CreditLabel.Position = UDim2.new(0.04, 0, 0.10, 0)
@@ -669,13 +623,13 @@ CreditGradient.Color = ColorSequence.new{
 }
 CreditGradient.Parent = CreditLabel
 
--- Exibição das frases e créditos
+-- Mostrar as frases uma a uma
 spawn(function()
     for _, frase in ipairs(frases) do
         TextLabel.Text = frase
         TextLabel.TextTransparency = 0
         CreditFrame.Visible = false
-        wait(3)
+        wait(3.0)
     end
     -- Mostrar créditos detalhados
     TextLabel.TextTransparency = 1
@@ -683,6 +637,6 @@ spawn(function()
     CreditFrame.BackgroundTransparency = 1
     local tween = TweenService:Create(CreditFrame, TweenInfo.new(1), {BackgroundTransparency = 0.15})
     tween:Play()
-    wait(6)
+    wait(7)
     ScreenGui:Destroy()
 end)
