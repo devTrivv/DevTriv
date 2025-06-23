@@ -1,0 +1,357 @@
+-- Base Teleport Hub + Noclip + Instant Lock (loop rapidão, delay ajustado para roubo perfeito) + Estilizado
+
+local player = game.Players.LocalPlayer
+local character = player.Character or player.CharacterAdded:Wait()
+local hrp = character:WaitForChild("HumanoidRootPart")
+local UIS = game:GetService("UserInputService")
+local RunService = game:GetService("RunService")
+
+local gui = Instance.new("ScreenGui")
+gui.Name = "BaseTeleportHub"
+gui.Parent = game.CoreGui
+
+-- Frame Principal
+local frame = Instance.new("Frame")
+frame.Size = UDim2.new(0, 220, 0, 290)
+frame.Position = UDim2.new(0, 30, 0, 300)
+frame.BackgroundColor3 = Color3.fromRGB(40, 40, 40)
+frame.BorderSizePixel = 0
+frame.Active = true
+frame.Draggable = true
+frame.Parent = gui
+
+-- Cantos arredondados
+local corner = Instance.new("UICorner")
+corner.CornerRadius = UDim.new(0, 12)
+corner.Parent = frame
+
+-- Título
+local title = Instance.new("TextLabel")
+title.Size = UDim2.new(1, 0, 0, 30)
+title.Position = UDim2.new(0, 0, 0, 0)
+title.BackgroundTransparency = 1
+title.Text = "Easy Steal-by pablo🤑"
+title.TextColor3 = Color3.fromRGB(255, 255, 255)
+title.Font = Enum.Font.GothamBold
+title.TextSize = 16
+title.Parent = frame
+
+-- TextBox para Número da Base
+local textbox = Instance.new("TextBox")
+textbox.Size = UDim2.new(1, -20, 0, 30)
+textbox.Position = UDim2.new(0, 10, 0, 40)
+textbox.PlaceholderText = "Digite base (1 a 8)"
+textbox.TextColor3 = Color3.new(1,1,1)
+textbox.BackgroundColor3 = Color3.fromRGB(60, 60, 60)
+textbox.Font = Enum.Font.Gotham
+textbox.TextSize = 14
+textbox.ClearTextOnFocus = false
+textbox.Parent = frame
+
+local textboxCorner = Instance.new("UICorner")
+textboxCorner.CornerRadius = UDim.new(0, 8)
+textboxCorner.Parent = textbox
+
+-- Botão de Teleporte
+local tpButton = Instance.new("TextButton")
+tpButton.Size = UDim2.new(1, -20, 0, 30)
+tpButton.Position = UDim2.new(0, 10, 0, 80)
+tpButton.Text = "🚀 Teleportar"
+tpButton.BackgroundColor3 = Color3.fromRGB(0, 170, 255)
+tpButton.TextColor3 = Color3.new(1,1,1)
+tpButton.Font = Enum.Font.GothamBold
+tpButton.TextSize = 14
+tpButton.Parent = frame
+
+local tpButtonCorner = Instance.new("UICorner")
+tpButtonCorner.CornerRadius = UDim.new(0, 8)
+tpButtonCorner.Parent = tpButton
+
+-- Botão Instant Lock
+local lockButton = Instance.new("TextButton")
+lockButton.Size = UDim2.new(1, -20, 0, 30)
+lockButton.Position = UDim2.new(0, 10, 0, 120)
+lockButton.Text = "🔒 Instant Lock: OFF"
+lockButton.BackgroundColor3 = Color3.fromRGB(255, 100, 100)
+lockButton.TextColor3 = Color3.new(1,1,1)
+lockButton.Font = Enum.Font.GothamBold
+lockButton.TextSize = 14
+lockButton.Parent = frame
+
+local lockCorner = Instance.new("UICorner")
+lockCorner.CornerRadius = UDim.new(0, 8)
+lockCorner.Parent = lockButton
+
+-- Botão de Noclip
+local noclipButton = Instance.new("TextButton")
+noclipButton.Size = UDim2.new(1, -20, 0, 30)
+noclipButton.Position = UDim2.new(0, 10, 0, 160)
+noclipButton.Text = "🚧 Noclip: OFF"
+noclipButton.BackgroundColor3 = Color3.fromRGB(255, 100, 100)
+noclipButton.TextColor3 = Color3.new(1,1,1)
+noclipButton.Font = Enum.Font.GothamBold
+noclipButton.TextSize = 14
+noclipButton.Parent = frame
+
+local noclipButtonCorner = Instance.new("UICorner")
+noclipButtonCorner.CornerRadius = UDim.new(0, 8)
+noclipButtonCorner.Parent = noclipButton
+
+-- Botão Instant Proximity Prompts (toggle)
+local ippButton = Instance.new("TextButton")
+ippButton.Size = UDim2.new(1, -20, 0, 30)
+ippButton.Position = UDim2.new(0, 10, 0, 200)
+ippButton.Text = "⚡ Instant Proximity: OFF"
+ippButton.BackgroundColor3 = Color3.fromRGB(255, 215, 100)
+ippButton.TextColor3 = Color3.new(1,1,1)
+ippButton.Font = Enum.Font.GothamBold
+ippButton.TextSize = 14
+ippButton.Parent = frame
+
+local ippButtonCorner = Instance.new("UICorner")
+ippButtonCorner.CornerRadius = UDim.new(0, 8)
+ippButtonCorner.Parent = ippButton
+
+-- Botão Auto Steal
+local autoStealButton = Instance.new("TextButton")
+autoStealButton.Size = UDim2.new(1, -20, 0, 30)
+autoStealButton.Position = UDim2.new(0, 10, 0, 240)
+autoStealButton.Text = "🤖 Auto Steal: OFF"
+autoStealButton.BackgroundColor3 = Color3.fromRGB(255, 200, 100)
+autoStealButton.TextColor3 = Color3.new(1,1,1)
+autoStealButton.Font = Enum.Font.GothamBold
+autoStealButton.TextSize = 14
+autoStealButton.Parent = frame
+
+local autoStealCorner = Instance.new("UICorner")
+autoStealCorner.CornerRadius = UDim.new(0, 8)
+autoStealCorner.Parent = autoStealButton
+
+-- Variáveis de Controle
+local noclipActive = false
+local noclipConnection
+
+local autoLockActive = false
+local lockConnection
+
+local instantProximityActive = false
+local instantProximityConnection
+
+local autoStealActive = false
+local autoStealConnection
+
+-- Valores de WalkSpeed
+local WALKSPEED_NORMAL = 30
+local WALKSPEED_ROUBANDO = 16
+
+-- Função de Teleporte (IDA: task.wait(0.05), VOLTA: task.wait())
+local function teleportToBaseAndReturn(baseNumber, instantReturn)
+    local originalCFrame = hrp.CFrame
+    local base = workspace:WaitForChild("Map"):WaitForChild("Bases"):FindFirstChild(tostring(baseNumber))
+    if base and base:FindFirstChildWhichIsA("BasePart") then
+        -- DELAY ANTES DE IR PRA BASE (top 2: 0.05)
+        if instantReturn then
+            task.wait(0.1)
+        else
+            task.wait(0.8)
+        end
+        hrp.CFrame = base:FindFirstChildWhichIsA("BasePart").CFrame + Vector3.new(0, 5, 0)
+        print("Teleportado para a base: " .. baseNumber)
+        -- Retorno
+        task.spawn(function()
+            if instantReturn then
+                task.wait() -- ultra rápido no retorno
+            else
+                task.wait(0.8)
+            end
+            local currentCharacter = player.Character
+            local currentHrp = currentCharacter and currentCharacter:FindFirstChild("HumanoidRootPart")
+            if currentHrp then
+                currentHrp.CFrame = originalCFrame
+                print("Retornou para posição original!")
+            end
+        end)
+    else
+        warn("Base número " .. baseNumber .. " não encontrada!")
+    end
+end
+
+-- Função Instant Lock (loop rapidão, 100% instantâneo)
+local function lockBaseInstant(baseNumber, hrp)
+    local base = workspace:FindFirstChild("Map"):FindFirstChild("Bases"):FindFirstChild(tostring(baseNumber))
+    if not base then return end
+    local important = base:FindFirstChild("Important")
+    if not important then return end
+    local lockButtonPart = important:FindFirstChild("LockButton")
+    if lockButtonPart and lockButtonPart:IsA("BasePart") then
+        firetouchinterest(hrp, lockButtonPart, 0)
+        firetouchinterest(hrp, lockButtonPart, 1)
+    end
+end
+
+local function startInstantLock()
+    if lockConnection then lockConnection:Disconnect() end
+    lockConnection = RunService.RenderStepped:Connect(function()
+        local character = player.Character
+        if character then
+            local hrp = character:FindFirstChild("HumanoidRootPart")
+            local baseNumber = tonumber(textbox.Text)
+            if hrp and baseNumber and baseNumber >= 1 and baseNumber <= 8 then
+                lockBaseInstant(baseNumber, hrp)
+            end
+        end
+    end)
+    print("Instant Lock ativado!")
+end
+
+local function stopInstantLock()
+    if lockConnection then
+        lockConnection:Disconnect()
+        lockConnection = nil
+        print("Instant Lock desativado!")
+    end
+end
+
+-- Instant Proximity universal
+local function setAllProximityPromptInstant()
+    game.DescendantAdded:Connect(function(descendant)
+        if descendant:IsA("ProximityPrompt") then
+            descendant.HoldDuration = 0
+        end
+    end)
+    for _, prompt in ipairs(game:GetDescendants()) do
+        if prompt:IsA("ProximityPrompt") then
+            prompt.HoldDuration = 0
+        end
+    end
+end
+
+local function clearAllProximityPromptInstant()
+end
+
+local function startInstantProximity()
+    if not instantProximityActive then return end
+    setAllProximityPromptInstant()
+    print("Instant Proximity ativado!")
+end
+
+local function stopInstantProximity()
+    clearAllProximityPromptInstant()
+    print("Instant Proximity desativado!")
+end
+
+-- AUTO STEAL baseado em WalkSpeed (16 = roubando, 30 = normal)
+local function startAutoSteal()
+    if autoStealConnection then autoStealConnection:Disconnect() end
+    local hum = character:FindFirstChildOfClass("Humanoid")
+    if not hum then return end
+    autoStealConnection = hum:GetPropertyChangedSignal("WalkSpeed"):Connect(function()
+        if not autoStealActive then return end
+        if hum.WalkSpeed == WALKSPEED_ROUBANDO then
+            local baseNumber = tonumber(textbox.Text)
+            if baseNumber and baseNumber >= 1 and baseNumber <= 8 then
+                teleportToBaseAndReturn(baseNumber, true) -- true = ida 0.05, volta ultra rápido
+                repeat task.wait(0.5) until hum.WalkSpeed ~= WALKSPEED_ROUBANDO or not autoStealActive
+            end
+        end
+    end)
+    print("Auto Steal ativado!")
+end
+
+local function stopAutoSteal()
+    if autoStealConnection then
+        autoStealConnection:Disconnect()
+        autoStealConnection = nil
+        print("Auto Steal desativado!")
+    end
+end
+
+-- Eventos
+
+tpButton.MouseButton1Click:Connect(function()
+    local input = tonumber(textbox.Text)
+    if input and input >= 1 and input <= 8 then
+        teleportToBaseAndReturn(input, false) -- false = delay padrão ida e volta
+    else
+        warn("Digite um número válido entre 1 e 8!")
+    end
+end)
+
+noclipButton.MouseButton1Click:Connect(function()
+    noclipActive = not noclipActive
+    if noclipActive then
+        noclipConnection = RunService.Stepped:Connect(function()
+            for _, part in pairs(character:GetDescendants()) do
+                if part:IsA("BasePart") and part.CanCollide == true then
+                    part.CanCollide = false
+                end
+            end
+        end)
+        noclipButton.Text = "🚧 Noclip: ON"
+        noclipButton.BackgroundColor3 = Color3.fromRGB(100, 255, 100)
+    else
+        if noclipConnection then
+            noclipConnection:Disconnect()
+            noclipConnection = nil
+        end
+        noclipButton.Text = "🚧 Noclip: OFF"
+        noclipButton.BackgroundColor3 = Color3.fromRGB(255, 100, 100)
+    end
+end)
+
+lockButton.MouseButton1Click:Connect(function()
+    autoLockActive = not autoLockActive
+    if autoLockActive then
+        lockButton.Text = "🔒 Instant Lock: ON"
+        lockButton.BackgroundColor3 = Color3.fromRGB(100, 255, 100)
+        startInstantLock()
+    else
+        lockButton.Text = "🔒 Instant Lock: OFF"
+        lockButton.BackgroundColor3 = Color3.fromRGB(255, 100, 100)
+        stopInstantLock()
+    end
+end)
+
+ippButton.MouseButton1Click:Connect(function()
+    instantProximityActive = not instantProximityActive
+    if instantProximityActive then
+        ippButton.Text = "⚡ Instant Proximity: ON"
+        ippButton.BackgroundColor3 = Color3.fromRGB(100, 255, 100)
+        startInstantProximity()
+    else
+        ippButton.Text = "⚡ Instant Proximity: OFF"
+        ippButton.BackgroundColor3 = Color3.fromRGB(255, 215, 100)
+        stopInstantProximity()
+    end
+end)
+
+autoStealButton.MouseButton1Click:Connect(function()
+    autoStealActive = not autoStealActive
+    if autoStealActive then
+        autoStealButton.Text = "🤖 Auto Steal: ON"
+        autoStealButton.BackgroundColor3 = Color3.fromRGB(100, 255, 100)
+        startAutoSteal()
+    else
+        autoStealButton.Text = "🤖 Auto Steal: OFF"
+        autoStealButton.BackgroundColor3 = Color3.fromRGB(255, 200, 100)
+        stopAutoSteal()
+    end
+end)
+
+player.CharacterAdded:Connect(function()
+    wait(1)
+    character = player.Character
+    hrp = character:WaitForChild("HumanoidRootPart")
+    if autoLockActive then startInstantLock() end
+    if noclipActive then noclipConnection = RunService.Stepped:Connect(function()
+        for _, part in pairs(character:GetDescendants()) do
+            if part:IsA("BasePart") and part.CanCollide == true then
+                part.CanCollide = false
+            end
+        end
+    end) end
+    if instantProximityActive then startInstantProximity() end
+    if autoStealActive then startAutoSteal() end
+end)
+
+print("Base Teleport Hub com delays ajustados: ida 0.05s, retorno instantâneo (task.wait()), para roubo sem falha e máxima velocidade!")
