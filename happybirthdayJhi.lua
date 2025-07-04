@@ -305,7 +305,7 @@ local frases = {
     "Fim das frases! Agora sim acabou kkkk"
 }
 
-local creditos = "Que o dia seja tão lindo quanto você! Não estou aí para estar perto de você nessa data tão importante, mas estou dentro do seu coraçãozinho. De Pablo para o amor da sua vida, Jhi ❤️👑"
+local creditos = "Feliz aniversário de 16 anos minha bebêeeee, Que o dia seja tão lindo quanto você! Não estou aí para estar perto de você nessa data tão importante, mas estou dentro do seu coraçãozinho🫶🏻❤️ De Pablo para o amor da sua vida, Jhi ❤️👑"
 
 -- VISUAL FESTIVO ROBLOX
 local Players = game:GetService("Players")
