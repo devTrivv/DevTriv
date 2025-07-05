@@ -345,8 +345,8 @@ Gradient.Parent = Background
 
 -- Banner animado no topo
 local Banner = Instance.new("Frame")
-Banner.Size = UDim2.new(0.95, 0, 0.12, 0)
-Banner.Position = UDim2.new(0.025, 0, 0.02, 0)
+Banner.Size = UDim2.new(0.95, 0, 0.13, 0)
+Banner.Position = UDim2.new(0.025, 0, 0.09, 0)
 Banner.BackgroundColor3 = Color3.fromRGB(255, 205, 98)
 Banner.BackgroundTransparency = 0.08
 Banner.ZIndex = 10
